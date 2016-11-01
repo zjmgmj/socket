@@ -1,20 +1,20 @@
-/*var express = require('express');
- var path = require('path');
+var express = require('express');
  var favicon = require('serve-favicon');
  var logger = require('morgan');
  var cookieParser = require('cookie-parser');
  var bodyParser = require('body-parser');
 
- var routes = require('./routes/index');
- var users = require('./routes/users');
 
- var app = express();*/
+
+
+ 
+ 
 var http = require('http'),
     fs = require('fs'),
     path = require('path'),
     mime = require('mime');
 var cache = {};
-
+ var app = express();
 function send404(response) {
     response.writeHead(404, {'Content-type': 'text/plain'});
     response.write('error 404:resource not found.');
@@ -65,3 +65,5 @@ server.listen(3000, function () {
 var chatServer;
 chatServer = require('./lib/chat_server');
 chatServer.listen(server);
+
+module.exports = app;
