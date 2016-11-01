@@ -1,0 +1,12 @@
+{
+  "name": "chartroom",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "socket.io":"~0.9.6",
+    "mime":"~1.2.7"
+  }
+}

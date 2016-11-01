@@ -1,0 +1,51 @@
+*{
+  line-style:none;
+  margin: 0;
+  padding:0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#content{
+  width: 800px;
+  margin:0  auto;
+}
+#room{
+  background: #ddd;
+  margin-bottom: 1rem;
+}
+#messages{
+  width: 690px;
+  height: 300px;
+  overflow: auto;
+  background: #eee;
+  margin-bottom: 1rem;
+  margin-right: 10px;
+}
+
+#room-list{
+    float: right;
+    width: 100px;
+    height: 300px;
+    overflow: auto;
+}
+#room-list div{
+    border-bottom: 1px #eee solid;
+}
+#room-list div:hover{
+    background: #ddd;
+}
+#send-message{
+    width: 700px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+#help{
+    font-family: Arial;
+    font-size: 12px;
+}
