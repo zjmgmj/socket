@@ -14,7 +14,7 @@ var http = require('http'),
     path = require('path'),
     mime = require('mime');
 var cache = {};
- var app = express();
+ // var app = express();
 function send404(response) {
     response.writeHead(404, {'Content-type': 'text/plain'});
     response.write('error 404:resource not found.');
@@ -66,4 +66,4 @@ var chatServer;
 chatServer = require('./lib/chat_server');
 chatServer.listen(server);
 
-module.exports = app;
+// module.exports = app;
